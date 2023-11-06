@@ -1,0 +1,9 @@
+{
+    "name": "my-react-math-component-tek",
+    "version": "1.0.0",
+    "main": "src/MathOperations.js",
+    "dependencies": {
+      "react": "^16.8.0",
+      "react-dom": "^16.8.0"
+    }
+  }
