@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { add, subtract, multiply, divide } from './'; // Import the math functions from the same directory
 
 class MathOperations extends Component {
   state = {
@@ -13,22 +14,22 @@ class MathOperations extends Component {
 
   add = () => {
     const { num1, num2 } = this.state;
-    this.setState({ result: num1 + num2 });
+    this.setState({ result: add(num1, num2) }); // Use the imported 'add' function
   };
 
   subtract = () => {
     const { num1, num2 } = this.state;
-    this.setState({ result: num1 - num2 });
+    this.setState({ result: subtract(num1, num2) }); // Use the imported 'subtract' function
   };
 
   multiply = () => {
     const { num1, num2 } = this.state;
-    this.setState({ result: num1 * num2 });
+    this.setState({ result: multiply(num1, num2) }); // Use the imported 'multiply' function
   };
 
   divide = () => {
     const { num1, num2 } = this.state;
-    this.setState({ result: num1 / num2 });
+    this.setState({ result: divide(num1, num2) }); // Use the imported 'divide' function
   };
 
   render() {
